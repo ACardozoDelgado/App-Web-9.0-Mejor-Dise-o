@@ -1,0 +1,281 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolución Guiada: Integrales Impropias</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Variables CSS faltantes -->
+  <style>
+    :root {
+      --primary-color: #8b5cf6;
+      --primary-dark: #7c3aed;
+      --secondary-color: #06b6d4;
+    }
+  </style>
+  
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          console.log('✅ MathJax cargado correctamente');
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧮 Resolución Guiada: Integrales Impropias</h1>
+      <p class="subtitle">Aprende paso a paso con ejercicios interactivos</p>
+      <a href="teoria.html" class="btn btn-theory" style="text-decoration: none; display: inline-block;">📚 TEORÍA COMPLETA</a>
+    </header>
+
+    <main id="main-content">
+      <!-- Selección de tipos -->
+      <section id="type-selection" class="type-selection">
+        <div class="type-card" data-type="primera">
+          <h3>🔄 Primera Especie</h3>
+          <p>Límites de integración infinitos</p>
+          <div class="example">Ejemplo: $\int_3^\infty \frac{1}{x^4} dx$</div>
+        </div>
+        
+        <div class="type-card" data-type="segunda">
+          <h3>⚡ Segunda Especie</h3>
+          <p>Discontinuidades en el integrando</p>
+          <div class="example">Ejemplo: $\int_0^1 \frac{1}{\sqrt{x}} dx$</div>
+        </div>
+        
+        <div class="type-card" data-type="tercera">
+          <h3>🔀 Tercera Especie</h3>
+          <p>Límites infinitos + discontinuidades</p>
+          <div class="example">Ejemplo: $\int_0^\infty \frac{1}{\sqrt{x(x+1)}} dx$</div>
+        </div>
+      </section>
+
+      <!-- Sección de ejercicios -->
+      <section id="exercise-section" class="exercise-section" style="display: none;">
+        <div class="exercise-header">
+          <h2 id="exercise-title" class="exercise-title"></h2>
+          <p id="exercise-description" class="exercise-description"></p>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <!-- Contenedor del paso actual -->
+        <div class="step-container">
+          <div id="step-header" class="step-header">
+            <span id="step-title">Paso 1</span>
+          </div>
+          
+          <div class="step-content">
+            <div id="question" class="question"></div>
+            
+            <div id="options" class="options"></div>
+            
+            <div id="explanation" class="explanation">
+              <strong>Explicación:</strong>
+              <p id="explanation-text"></p>
+            </div>
+            
+            <div id="hint" class="hint">
+              <strong>💡 Pista:</strong>
+              <p id="hint-text"></p>
+            </div>
+            
+            <div class="controls">
+              <button id="check-btn" class="btn">Verificar Respuesta</button>
+              <button id="hint-btn" class="btn btn-warning">💡 Pista</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="navigation">
+          <button id="prev-btn" class="btn btn-secondary" disabled>← Anterior</button>
+          <div id="step-info" class="step-info">Paso 1 de 3</div>
+          <button id="next-btn" class="btn" disabled>Siguiente →</button>
+        </div>
+      </section>
+
+      <!-- Resultados -->
+      <section id="results-section" class="results" style="display: none;">
+        <h2>🎉 ¡Ejercicio Completado!</h2>
+        <div id="score" class="score">0%</div>
+        <p id="performance-message" class="performance-message"></p>
+        
+        <div class="controls">
+          <button id="restart-btn" class="btn">🔄 Reiniciar</button>
+          <button id="back-to-menu-btn" class="btn btn-secondary">🏠 Volver al Menú</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal de teoría -->
+    <div id="theory-modal" class="theory-modal">
+      <div class="theory-content">
+        <button id="theory-close" class="theory-close">×</button>
+        <div id="theory-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolución Guiada: Integrales Impropias</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Variables CSS faltantes -->
+  <style>
+    :root {
+      --primary-color: #8b5cf6;
+      --primary-dark: #7c3aed;
+      --secondary-color: #06b6d4;
+    }
+  </style>
+  
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          console.log('✅ MathJax cargado correctamente');
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧮 Resolución Guiada: Integrales Impropias</h1>
+      <p class="subtitle">Aprende paso a paso con ejercicios interactivos</p>
+      <a href="teoria.html" class="btn btn-theory" style="text-decoration: none; display: inline-block;">📚 TEORÍA COMPLETA</a>
+    </header>
+
+    <main id="main-content">
+      <!-- Selección de tipos -->
+      <section id="type-selection" class="type-selection">
+        <div class="type-card" data-type="primera">
+          <h3>🔄 Primera Especie</h3>
+          <p>Límites de integración infinitos</p>
+          <div class="example">Ejemplo: $\int_3^\infty \frac{1}{x^4} dx$</div>
+        </div>
+        
+        <div class="type-card" data-type="segunda">
+          <h3>⚡ Segunda Especie</h3>
+          <p>Discontinuidades en el integrando</p>
+          <div class="example">Ejemplo: $\int_0^1 \frac{1}{\sqrt{x}} dx$</div>
+        </div>
+        
+        <div class="type-card" data-type="tercera">
+          <h3>🔀 Tercera Especie</h3>
+          <p>Límites infinitos + discontinuidades</p>
+          <div class="example">Ejemplo: $\int_0^\infty \frac{1}{\sqrt{x(x+1)}} dx$</div>
+        </div>
+      </section>
+
+      <!-- Sección de ejercicios -->
+      <section id="exercise-section" class="exercise-section" style="display: none;">
+        <div class="exercise-header">
+          <h2 id="exercise-title" class="exercise-title"></h2>
+          <p id="exercise-description" class="exercise-description"></p>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <!-- Contenedor del paso actual -->
+        <div class="step-container">
+          <div id="step-header" class="step-header">
+            <span id="step-title">Paso 1</span>
+          </div>
+          
+          <div class="step-content">
+            <div id="question" class="question"></div>
+            
+            <div id="options" class="options"></div>
+            
+            <div id="explanation" class="explanation">
+              <strong>Explicación:</strong>
+              <p id="explanation-text"></p>
+            </div>
+            
+            <div id="hint" class="hint">
+              <strong>💡 Pista:</strong>
+              <p id="hint-text"></p>
+            </div>
+            
+            <div class="controls">
+              <button id="check-btn" class="btn">Verificar Respuesta</button>
+              <button id="hint-btn" class="btn btn-warning">💡 Pista</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="navigation">
+          <button id="prev-btn" class="btn btn-secondary" disabled>← Anterior</button>
+          <div id="step-info" class="step-info">Paso 1 de 3</div>
+          <button id="next-btn" class="btn" disabled>Siguiente →</button>
+        </div>
+      </section>
+
+      <!-- Resultados -->
+      <section id="results-section" class="results" style="display: none;">
+        <h2>🎉 ¡Ejercicio Completado!</h2>
+        <div id="score" class="score">0%</div>
+        <p id="performance-message" class="performance-message"></p>
+        
+        <div class="controls">
+          <button id="restart-btn" class="btn">🔄 Reiniciar</button>
+          <button id="back-to-menu-btn" class="btn btn-secondary">🏠 Volver al Menú</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal de teoría -->
+    <div id="theory-modal" class="theory-modal">
+      <div class="theory-content">
+        <button id="theory-close" class="theory-close">×</button>
+        <div id="theory-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> c23c426dc84d26e0edaf70b231004de6bdf7b095
